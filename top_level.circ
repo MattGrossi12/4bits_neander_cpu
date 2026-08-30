@@ -46,22 +46,22 @@
   <lib desc="#BFH-Praktika" name="10"/>
   <lib desc="#Input/Output-Extra" name="11"/>
   <lib desc="#Soc" name="12"/>
-  <lib desc="file#mem_ram.circ" name="13"/>
-  <lib desc="file#disp7s.circ" name="14"/>
-  <lib desc="file#ula_code_g.circ" name="15"/>
-  <lib desc="file#mux8bits.circ" name="16"/>
-  <lib desc="file#acumulador.circ" name="17"/>
-  <lib desc="file#DEC.circ" name="18"/>
-  <lib desc="file#PC.circ" name="19"/>
-  <lib desc="file#control_unity.circ" name="20"/>
-  <lib desc="file#ula_n_z.circ" name="21"/>
-  <lib desc="file#ula.circ" name="22"/>
-  <lib desc="file#rem.circ" name="23"/>
-  <lib desc="file#reg_NZ.circ" name="24"/>
-  <lib desc="file#op_cde.circ" name="25"/>
-  <lib desc="file#rdm.circ" name="26"/>
-  <lib desc="file#doubledisp.circ" name="27"/>
-  <lib desc="file#control_unity_2.0.circ" name="28"/>
+  <lib desc="file#mux8bits.circ" name="13"/>
+  <lib desc="file#ula.circ" name="14"/>
+  <lib desc="file#ula_n_z.circ" name="15"/>
+  <lib desc="file#control_unity_2.0.circ" name="16"/>
+  <lib desc="file#ula_code_g.circ" name="17"/>
+  <lib desc="file#control_unity.circ" name="18"/>
+  <lib desc="file#acumulador.circ" name="19"/>
+  <lib desc="file#rem.circ" name="20"/>
+  <lib desc="file#reg_NZ.circ" name="21"/>
+  <lib desc="file#rdm.circ" name="22"/>
+  <lib desc="file#op_cde.circ" name="23"/>
+  <lib desc="file#mem_ram.circ" name="24"/>
+  <lib desc="file#disp7s.circ" name="25"/>
+  <lib desc="file#doubledisp.circ" name="26"/>
+  <lib desc="file#DEC.circ" name="27"/>
+  <lib desc="file#PC.circ" name="28"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -377,21 +377,21 @@
       <a name="facing" val="north"/>
       <a name="label" val="Z"/>
     </comp>
-    <comp lib="13" loc="(1970,1620)" name="MEM"/>
-    <comp lib="15" loc="(1290,790)" name="ula_code"/>
-    <comp lib="16" loc="(1660,1160)" name="mux_8bits"/>
-    <comp lib="16" loc="(1660,1340)" name="mux_8bits"/>
-    <comp lib="17" loc="(1970,1040)" name="ACC"/>
-    <comp lib="18" loc="(550,730)" name="dec_cu"/>
-    <comp lib="19" loc="(1290,950)" name="program_counter"/>
-    <comp lib="21" loc="(1970,820)" name="ula_n_z"/>
-    <comp lib="22" loc="(1620,750)" name="ula"/>
-    <comp lib="23" loc="(1970,1220)" name="R_E_M"/>
-    <comp lib="24" loc="(1970,2030)" name="regNZ"/>
-    <comp lib="25" loc="(1970,1870)" name="opcode"/>
-    <comp lib="26" loc="(1970,1410)" name="R_D_M"/>
-    <comp lib="27" loc="(3230,1580)" name="div2disp"/>
-    <comp lib="28" loc="(840,730)" name="control_unity_v2"/>
+    <comp lib="13" loc="(1660,1160)" name="mux_8bits"/>
+    <comp lib="13" loc="(1660,1340)" name="mux_8bits"/>
+    <comp lib="14" loc="(1620,750)" name="ula"/>
+    <comp lib="15" loc="(1970,820)" name="ula_n_z"/>
+    <comp lib="16" loc="(840,730)" name="control_unity_v2"/>
+    <comp lib="17" loc="(1290,790)" name="ula_code"/>
+    <comp lib="19" loc="(1970,1040)" name="ACC"/>
+    <comp lib="20" loc="(1970,1220)" name="R_E_M"/>
+    <comp lib="21" loc="(1970,2030)" name="regNZ"/>
+    <comp lib="22" loc="(1970,1410)" name="R_D_M"/>
+    <comp lib="23" loc="(1970,1870)" name="opcode"/>
+    <comp lib="24" loc="(1970,1620)" name="MEM"/>
+    <comp lib="26" loc="(3230,1580)" name="div2disp"/>
+    <comp lib="27" loc="(550,730)" name="dec_cu"/>
+    <comp lib="28" loc="(1290,950)" name="program_counter"/>
     <comp lib="6" loc="(2360,690)" name="LedBar"/>
     <comp lib="6" loc="(2660,740)" name="7-Segment Display">
       <a name="bg" val="#000000"/>
