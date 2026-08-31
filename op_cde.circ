@@ -9,7 +9,6 @@
     </tool>
     <tool name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="width" val="4"/>
     </tool>
   </lib>
   <lib desc="#Gates" name="1"/>
@@ -62,24 +61,7 @@
     <a name="circuit" val="opcode"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(480,1000)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="cargaRI"/>
-    </comp>
-    <comp lib="0" loc="(480,1020)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="clock"/>
-    </comp>
-    <comp lib="0" loc="(480,1040)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="reset"/>
-    </comp>
-    <comp lib="0" loc="(480,980)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="data_input"/>
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="0" loc="(780,980)" name="Splitter">
+    <comp lib="0" loc="(1190,850)" name="Splitter">
       <a name="bit0" val="none"/>
       <a name="bit1" val="none"/>
       <a name="bit2" val="none"/>
@@ -87,23 +69,49 @@
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
     </comp>
-    <comp lib="0" loc="(820,930)" name="Splitter">
+    <comp lib="0" loc="(1230,800)" name="Splitter">
       <a name="facing" val="west"/>
       <a name="fanout" val="4"/>
       <a name="incoming" val="4"/>
     </comp>
-    <comp lib="0" loc="(850,930)" name="Pin">
+    <comp lib="0" loc="(1260,800)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="flag_out"/>
       <a name="output" val="true"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="12" loc="(780,980)" name="ACC"/>
-    <wire from="(480,1000)" to="(560,1000)"/>
-    <wire from="(480,1020)" to="(560,1020)"/>
-    <wire from="(480,1040)" to="(560,1040)"/>
-    <wire from="(480,980)" to="(560,980)"/>
-    <wire from="(820,930)" to="(850,930)"/>
+    <comp lib="0" loc="(780,920)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="cargaRI"/>
+    </comp>
+    <comp lib="0" loc="(780,950)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="clock"/>
+    </comp>
+    <comp lib="0" loc="(780,980)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="reset"/>
+    </comp>
+    <comp lib="0" loc="(910,850)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="data_input"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="4" loc="(1110,820)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <wire from="(1080,870)" to="(1080,920)"/>
+    <wire from="(1080,870)" to="(1110,870)"/>
+    <wire from="(1100,890)" to="(1100,950)"/>
+    <wire from="(1100,890)" to="(1110,890)"/>
+    <wire from="(1140,910)" to="(1140,980)"/>
+    <wire from="(1170,850)" to="(1190,850)"/>
+    <wire from="(1230,800)" to="(1260,800)"/>
+    <wire from="(780,920)" to="(1080,920)"/>
+    <wire from="(780,950)" to="(1100,950)"/>
+    <wire from="(780,980)" to="(1140,980)"/>
+    <wire from="(910,850)" to="(1110,850)"/>
   </circuit>
 </project>

@@ -72,6 +72,11 @@
       <a name="appearance" val="classic"/>
       <a name="label" val="reset"/>
     </comp>
+    <comp lib="0" loc="(270,480)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="Pinp"/>
+      <a name="width" val="8"/>
+    </comp>
     <comp lib="0" loc="(580,480)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
@@ -89,6 +94,7 @@
     <wire from="(200,460)" to="(300,460)"/>
     <wire from="(210,440)" to="(210,450)"/>
     <wire from="(210,450)" to="(360,450)"/>
+    <wire from="(270,480)" to="(360,480)"/>
     <wire from="(300,390)" to="(300,460)"/>
     <wire from="(300,390)" to="(360,390)"/>
     <wire from="(340,420)" to="(340,440)"/>

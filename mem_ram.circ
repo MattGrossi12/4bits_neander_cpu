@@ -102,6 +102,7 @@
     </comp>
     <comp lib="4" loc="(430,260)" name="RAM">
       <a name="appearance" val="logisim_evolution"/>
+      <a name="asyncread" val="true"/>
     </comp>
     <wire from="(150,320)" to="(190,320)"/>
     <wire from="(190,320)" to="(190,500)"/>

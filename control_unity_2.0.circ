@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="4.1.0" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v4.1.0(https://github.com/logisim-evolution/).
+<project source="3.9.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.9.0(https://github.com/logisim-evolution/).
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
@@ -22,16 +22,15 @@
   </lib>
   <lib desc="#Plexers" name="2"/>
   <lib desc="#Arithmetic" name="3"/>
-  <lib desc="#FPArithmetic" name="4"/>
-  <lib desc="#Memory" name="5"/>
-  <lib desc="#I/O" name="6"/>
-  <lib desc="#TTL" name="7"/>
-  <lib desc="#TCL" name="8"/>
-  <lib desc="#Base" name="9"/>
-  <lib desc="#BFH-Praktika" name="10"/>
-  <lib desc="#Input/Output-Extra" name="11"/>
-  <lib desc="#Soc" name="12"/>
-  <lib desc="file#temp_sinal_gen.circ" name="13"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#TTL" name="6"/>
+  <lib desc="#TCL" name="7"/>
+  <lib desc="#Base" name="8"/>
+  <lib desc="#BFH-Praktika" name="9"/>
+  <lib desc="#Input/Output-Extra" name="10"/>
+  <lib desc="#Soc" name="11"/>
+  <lib desc="file#temp_sinal_gen.circ" name="12"/>
   <main name="control_unity_v2"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -39,20 +38,20 @@
     <a name="simrand" val="0"/>
   </options>
   <mappings>
-    <tool lib="9" map="Button2" name="Poke Tool"/>
-    <tool lib="9" map="Button3" name="Menu Tool"/>
-    <tool lib="9" map="Ctrl Button1" name="Menu Tool"/>
+    <tool lib="8" map="Button2" name="Poke Tool"/>
+    <tool lib="8" map="Button3" name="Menu Tool"/>
+    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
   </mappings>
   <toolbar>
-    <tool lib="9" name="Poke Tool"/>
-    <tool lib="9" name="Edit Tool"/>
-    <tool lib="9" name="Wiring Tool"/>
-    <tool lib="9" name="Text Tool"/>
+    <tool lib="8" name="Poke Tool"/>
+    <tool lib="8" name="Edit Tool"/>
+    <tool lib="8" name="Wiring Tool"/>
+    <tool lib="8" name="Text Tool"/>
     <sep/>
     <tool lib="0" name="Pin"/>
     <tool lib="0" name="Pin">
       <a name="facing" val="west"/>
-      <a name="type" val="output"/>
+      <a name="output" val="true"/>
     </tool>
     <sep/>
     <tool lib="1" name="NOT Gate"/>
@@ -62,8 +61,8 @@
     <tool lib="1" name="NAND Gate"/>
     <tool lib="1" name="NOR Gate"/>
     <sep/>
-    <tool lib="5" name="D Flip-Flop"/>
-    <tool lib="5" name="Register"/>
+    <tool lib="4" name="D Flip-Flop"/>
+    <tool lib="4" name="Register"/>
   </toolbar>
   <circuit name="control_unity_v2">
     <a name="appearance" val="logisim_evolution"/>
@@ -240,6 +239,10 @@
       <a name="facing" val="east"/>
       <a name="label" val="t5"/>
     </comp>
+    <comp lib="0" loc="(1940,770)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="reset_tO"/>
+    </comp>
     <comp lib="0" loc="(1970,1970)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="t2"/>
@@ -260,9 +263,9 @@
       <a name="facing" val="east"/>
       <a name="label" val="NOT_op"/>
     </comp>
-    <comp lib="0" loc="(2010,760)" name="Tunnel">
+    <comp lib="0" loc="(2000,770)" name="Tunnel">
       <a name="facing" val="south"/>
-      <a name="label" val="reset_tO"/>
+      <a name="label" val="clock"/>
     </comp>
     <comp lib="0" loc="(2050,1150)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -271,9 +274,9 @@
     <comp lib="0" loc="(2050,1970)" name="Tunnel">
       <a name="label" val="cargaRI"/>
     </comp>
-    <comp lib="0" loc="(2070,760)" name="Tunnel">
+    <comp lib="0" loc="(2060,770)" name="Tunnel">
       <a name="facing" val="south"/>
-      <a name="label" val="clock"/>
+      <a name="label" val="goto_tO"/>
     </comp>
     <comp lib="0" loc="(2130,1150)" name="Tunnel">
       <a name="label" val="cargaNZ"/>
@@ -281,7 +284,7 @@
     <comp lib="0" loc="(2130,1400)" name="Tunnel">
       <a name="label" val="cargaPC"/>
     </comp>
-    <comp lib="0" loc="(2130,760)" name="Tunnel">
+    <comp lib="0" loc="(2130,770)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="label" val="HLT_op"/>
     </comp>
@@ -388,91 +391,91 @@
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="cargaPC"/>
-      <a name="type" val="output"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(2510,1260)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="cargaNZ"/>
-      <a name="type" val="output"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(2510,1290)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="cargaAC"/>
-      <a name="type" val="output"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(2510,1320)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="ulaNOT"/>
-      <a name="type" val="output"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(2510,1350)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="ulaAND"/>
-      <a name="type" val="output"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(2510,1380)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="ulaOR"/>
-      <a name="type" val="output"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(2510,1410)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="ulaADD"/>
-      <a name="type" val="output"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(2510,1440)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="ulaY"/>
-      <a name="type" val="output"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(2510,1470)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="write"/>
-      <a name="type" val="output"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(2510,1500)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="read"/>
-      <a name="type" val="output"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(2510,1530)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="cargaRDM"/>
-      <a name="type" val="output"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(2510,1560)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="sel"/>
-      <a name="type" val="output"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(2510,1590)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="incPC"/>
-      <a name="type" val="output"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(2510,1620)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="cargaRI"/>
-      <a name="type" val="output"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(2510,1650)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="cargaREM"/>
-      <a name="type" val="output"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(2510,760)" name="Tunnel">
       <a name="facing" val="south"/>
@@ -790,92 +793,92 @@
       <a name="inputs" val="3"/>
       <a name="size" val="70"/>
     </comp>
-    <comp lib="13" loc="(2370,780)" name="temp_sinal"/>
-    <comp lib="6" loc="(2530,780)" name="LED"/>
-    <comp lib="6" loc="(2530,800)" name="LED"/>
-    <comp lib="6" loc="(2530,820)" name="LED"/>
-    <comp lib="6" loc="(2530,840)" name="LED"/>
-    <comp lib="6" loc="(2530,860)" name="LED"/>
-    <comp lib="6" loc="(2530,880)" name="LED"/>
-    <comp lib="6" loc="(2530,900)" name="LED"/>
-    <comp lib="6" loc="(2530,920)" name="LED"/>
-    <comp lib="9" loc="(1000,555)" name="Text">
+    <comp lib="12" loc="(2370,780)" name="temp_sinal"/>
+    <comp lib="5" loc="(2530,780)" name="LED"/>
+    <comp lib="5" loc="(2530,800)" name="LED"/>
+    <comp lib="5" loc="(2530,820)" name="LED"/>
+    <comp lib="5" loc="(2530,840)" name="LED"/>
+    <comp lib="5" loc="(2530,860)" name="LED"/>
+    <comp lib="5" loc="(2530,880)" name="LED"/>
+    <comp lib="5" loc="(2530,900)" name="LED"/>
+    <comp lib="5" loc="(2530,920)" name="LED"/>
+    <comp lib="8" loc="(1000,555)" name="Text">
       <a name="font" val="SansSerif bold 34"/>
       <a name="text" val="Interface de Entrada"/>
     </comp>
-    <comp lib="9" loc="(1010,1040)" name="Text">
+    <comp lib="8" loc="(1010,1040)" name="Text">
       <a name="font" val="SansSerif bold 22"/>
       <a name="text" val="cargaREM"/>
     </comp>
-    <comp lib="9" loc="(1020,1540)" name="Text">
+    <comp lib="8" loc="(1020,1540)" name="Text">
       <a name="font" val="SansSerif bold 22"/>
       <a name="text" val="ula_Y"/>
     </comp>
-    <comp lib="9" loc="(1035,1290)" name="Text">
+    <comp lib="8" loc="(1035,1290)" name="Text">
       <a name="font" val="SansSerif bold 22"/>
       <a name="text" val="incPC"/>
     </comp>
-    <comp lib="9" loc="(1050,1785)" name="Text">
+    <comp lib="8" loc="(1050,1785)" name="Text">
       <a name="font" val="SansSerif bold 22"/>
       <a name="text" val="sel"/>
     </comp>
-    <comp lib="9" loc="(1420,1290)" name="Text">
+    <comp lib="8" loc="(1420,1290)" name="Text">
       <a name="font" val="SansSerif bold 22"/>
       <a name="text" val="cargaRDM"/>
     </comp>
-    <comp lib="9" loc="(1420,1540)" name="Text">
+    <comp lib="8" loc="(1420,1540)" name="Text">
       <a name="font" val="SansSerif bold 22"/>
       <a name="text" val="write"/>
     </comp>
-    <comp lib="9" loc="(1425,1795)" name="Text">
+    <comp lib="8" loc="(1425,1795)" name="Text">
       <a name="font" val="SansSerif bold 22"/>
       <a name="text" val="ula_ADD"/>
     </comp>
-    <comp lib="9" loc="(1440,1040)" name="Text">
+    <comp lib="8" loc="(1440,1040)" name="Text">
       <a name="font" val="SansSerif bold 22"/>
       <a name="text" val="READ"/>
     </comp>
-    <comp lib="9" loc="(1835,1045)" name="Text">
+    <comp lib="8" loc="(1835,1045)" name="Text">
       <a name="font" val="SansSerif bold 22"/>
       <a name="text" val="ula_OR"/>
     </comp>
-    <comp lib="9" loc="(1835,1295)" name="Text">
+    <comp lib="8" loc="(1835,1295)" name="Text">
       <a name="font" val="SansSerif bold 22"/>
       <a name="text" val="ula_AND"/>
     </comp>
-    <comp lib="9" loc="(1835,1545)" name="Text">
+    <comp lib="8" loc="(1835,1545)" name="Text">
       <a name="font" val="SansSerif bold 22"/>
       <a name="text" val="ula_NOT"/>
     </comp>
-    <comp lib="9" loc="(1835,1795)" name="Text">
+    <comp lib="8" loc="(1835,1795)" name="Text">
       <a name="font" val="SansSerif bold 22"/>
       <a name="text" val="cargaAC"/>
     </comp>
-    <comp lib="9" loc="(2235,1870)" name="Text">
+    <comp lib="8" loc="(2235,1870)" name="Text">
       <a name="font" val="SansSerif bold 22"/>
       <a name="text" val="cargaRI"/>
     </comp>
-    <comp lib="9" loc="(2240,1545)" name="Text">
+    <comp lib="8" loc="(2240,1545)" name="Text">
       <a name="font" val="SansSerif bold 22"/>
       <a name="text" val="goto_tO"/>
     </comp>
-    <comp lib="9" loc="(2250,1295)" name="Text">
+    <comp lib="8" loc="(2250,1295)" name="Text">
       <a name="font" val="SansSerif bold 22"/>
       <a name="text" val="cargaPC"/>
     </comp>
-    <comp lib="9" loc="(2255,1040)" name="Text">
+    <comp lib="8" loc="(2255,1040)" name="Text">
       <a name="font" val="SansSerif bold 22"/>
       <a name="text" val="cargaNZ"/>
     </comp>
-    <comp lib="9" loc="(2300,560)" name="Text">
+    <comp lib="8" loc="(2300,560)" name="Text">
       <a name="font" val="SansSerif bold 34"/>
       <a name="text" val="temp_counter"/>
     </comp>
-    <comp lib="9" loc="(2480,1125)" name="Text">
+    <comp lib="8" loc="(2480,1125)" name="Text">
       <a name="font" val="SansSerif bold 22"/>
       <a name="text" val="PINOUT"/>
     </comp>
-    <comp lib="9" loc="(2625,1875)" name="Text">
+    <comp lib="8" loc="(2625,1875)" name="Text">
       <a name="font" val="SansSerif bold 22"/>
       <a name="text" val="reset_tO"/>
     </comp>
@@ -973,25 +976,27 @@
     <wire from="(1930,1720)" to="(2080,1720)"/>
     <wire from="(1930,1770)" to="(1960,1770)"/>
     <wire from="(1930,1810)" to="(1960,1810)"/>
+    <wire from="(1940,770)" to="(1940,840)"/>
+    <wire from="(1940,840)" to="(2150,840)"/>
     <wire from="(1970,1970)" to="(2050,1970)"/>
     <wire from="(1980,1380)" to="(2050,1380)"/>
     <wire from="(1980,1420)" to="(2050,1420)"/>
     <wire from="(1980,1630)" to="(1990,1630)"/>
     <wire from="(1980,1660)" to="(1990,1660)"/>
+    <wire from="(2000,770)" to="(2000,820)"/>
+    <wire from="(2000,820)" to="(2150,820)"/>
     <wire from="(2010,1570)" to="(2140,1570)"/>
     <wire from="(2010,1790)" to="(2140,1790)"/>
-    <wire from="(2010,760)" to="(2010,820)"/>
-    <wire from="(2010,820)" to="(2150,820)"/>
     <wire from="(2050,1150)" to="(2130,1150)"/>
     <wire from="(2060,1660)" to="(2080,1660)"/>
-    <wire from="(2070,760)" to="(2070,800)"/>
-    <wire from="(2070,800)" to="(2150,800)"/>
+    <wire from="(2060,770)" to="(2060,800)"/>
+    <wire from="(2060,800)" to="(2150,800)"/>
     <wire from="(2080,1660)" to="(2080,1670)"/>
     <wire from="(2080,1670)" to="(2090,1670)"/>
     <wire from="(2080,1710)" to="(2080,1720)"/>
     <wire from="(2080,1710)" to="(2090,1710)"/>
     <wire from="(2100,1400)" to="(2130,1400)"/>
-    <wire from="(2130,760)" to="(2130,780)"/>
+    <wire from="(2130,770)" to="(2130,780)"/>
     <wire from="(2130,780)" to="(2150,780)"/>
     <wire from="(2140,1570)" to="(2140,1660)"/>
     <wire from="(2140,1660)" to="(2150,1660)"/>
